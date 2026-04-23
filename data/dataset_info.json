@@ -745,5 +745,18 @@
       "prompt": "content"
     },
     "folder": "python"
-  }
+  },
+  "qwen_train_data": {
+    "file_name": "/kaggle/input/datasets/xiaobaoqiang/multi-chat/multi_train.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+}
 }
