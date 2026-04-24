@@ -1,14 +1,14 @@
 ### model
-model_name_or_path: Qwen/Qwen2.5-1.5B-Instruct
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
 
 ### method
 stage: sft
 do_train: true
-finetuning_type: full
-#lora_target: all
-#lora_rank: 16
-#lora_alpha: 16
-#lora_dropout: 0.05
+finetuning_type: lora
+lora_target: all
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.05
 
 ### dataset
 dataset: qwen_train_data
