@@ -18,7 +18,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: qwen2-0.5b/lora
+output_dir: /kaggle/working/qwen2-0.5b/lora
 logging_steps: 100
 save_steps: 100
 plot_loss: true
