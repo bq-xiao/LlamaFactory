@@ -4,7 +4,11 @@ model_name_or_path: Qwen/Qwen2.5-7B-Instruct
 ### method
 stage: sft
 do_train: true
-finetuning_type: full
+finetuning_type: lora
+lora_target: all
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.05
 
 ### dataset
 dataset: qwen_train_data
@@ -14,7 +18,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: /kaggle/working/qwen2-0.5b/full
+output_dir: /kaggle/working/qwen2-0.5b/lora
 logging_steps: 100
 save_steps: 100
 plot_loss: true
