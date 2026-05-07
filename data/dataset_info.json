@@ -747,16 +747,17 @@
     "folder": "python"
   },
   "qwen_train_data": {
-    "file_name": "/kaggle/working/multi_train.json",
+    "file_name": "qwen_train_data.json",
     "formatting": "sharegpt",
     "columns": {
-      "messages": "conversations"
+      "messages": "messages"
     },
     "tags": {
-      "role_tag": "from",
-      "content_tag": "value",
+      "role_tag": "role",
+      "content_tag": "content",
       "user_tag": "user",
-      "assistant_tag": "assistant"
+      "assistant_tag": "assistant",
+      "system_tag": "system"
     }
 }
 }
