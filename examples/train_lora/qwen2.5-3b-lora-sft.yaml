@@ -11,14 +11,14 @@ lora_alpha: 16
 lora_dropout: 0.05
 
 ### dataset
-dataset: qwen_train_data
+dataset: multi_train_0,multi_train_1,multi_train_2,multi_train_3,multi_train_4,multi_train_5,multi_train_6,multi_train_7,multi_train_8,multi_train_9,multi_train_10
 template: qwen
 cutoff_len: 1024
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: /kaggle/working/qwen2-0.5b/lora
+output_dir: /kaggle/working/qwen2-3b/lora
 logging_steps: 100
 save_steps: 100
 plot_loss: true
