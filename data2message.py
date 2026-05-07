@@ -1,6 +1,8 @@
 import json
 
-def data2message(in_file, out_file):
+def data2message(in_file, out_dir):
+    i = 0
+    index = 0
     messages = []
     messages.append({
         "role": "system",
@@ -16,12 +18,20 @@ def data2message(in_file, out_file):
                     "role":conv['from'],
                     "content": conv['value']
                 })
-    data = {
-        "messages": messages
-    }
-    #msg = json.dumps(data)
-    #print(msg)
-    with open(out_file, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(data, ensure_ascii=False))
-
-data2message('multi_test.jsonl', 'qwen_train_test.json')
+            if (i+1) % 2000 ==0:
+                data = {
+                    "messages": messages
+                }
+                # msg = json.dumps(data)
+                # print(msg)
+                out_file = out_dir + "/multi_train_" + str(index) + ".json"
+                with open(out_file, 'w', encoding='utf-8') as f:
+                    f.write(json.dumps(data, ensure_ascii=False))
+                index = index + 1
+                messages = []
+                messages.append({
+                    "role": "system",
+                    "content": "我是你的问答助手"
+                })
+            i = i + 1
+data2message('multi_train.jsonl', '.')
