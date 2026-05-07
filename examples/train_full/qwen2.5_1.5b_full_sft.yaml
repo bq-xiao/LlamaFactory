@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+model_name_or_path: Qwen/Qwen2.5-1.5B-Instruct
 
 ### method
 stage: sft
@@ -7,7 +7,7 @@ do_train: true
 finetuning_type: full
 
 ### dataset
-dataset: multi_train_0,multi_train_1,multi_train_2,multi_train_3,multi_train_4,multi_train_5,multi_train_6,multi_train_7,multi_train_8,multi_train_9,multi_train_10
+dataset: multi_train_0,multi_train_1,multi_train_2,multi_train_3,multi_train_4,multi_train_5,multi_train_6,multi_train_7,multi_train_8,multi_train_9,multi_train_10,multi_train_11
 template: qwen
 cutoff_len: 512
 overwrite_cache: true
@@ -24,7 +24,7 @@ overwrite_output_dir: true
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 16
 learning_rate: 1.0e-5
-num_train_epochs: 20.0
+num_train_epochs: 5.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
