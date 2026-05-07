@@ -34,4 +34,12 @@ def data2message(in_file, out_dir):
                     "content": "我是你的问答助手"
                 })
             i = i + 1
-data2message('multi_train.jsonl', '.')
+    if len(messages) > 0:
+        messages.insert(0, {
+            "role": "system",
+            "content": "我是你的问答助手"
+        })
+        out_file = out_dir + "/multi_train_" + str(index) + ".json"
+        with open(out_file, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(data, ensure_ascii=False))
+data2message('multi_train.jsonl', 'data')

@@ -747,7 +747,7 @@
 		"folder": "python"
 	},
 	"multi_train_0": {
-		"file_name": "/kaggle/working/multi_train_0.json",
+		"file_name": "multi_train_0.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -761,7 +761,7 @@
 		}
 	},
 	"multi_train_1": {
-		"file_name": "/kaggle/working/multi_train_1.json",
+		"file_name": "multi_train_1.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -775,7 +775,7 @@
 		}
 	},
 	"multi_train_2": {
-		"file_name": "/kaggle/working/multi_train_2.json",
+		"file_name": "multi_train_2.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -789,7 +789,7 @@
 		}
 	},
 	"multi_train_3": {
-		"file_name": "/kaggle/working/multi_train_3.json",
+		"file_name": "multi_train_3.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -803,7 +803,7 @@
 		}
 	},
 	"multi_train_4": {
-		"file_name": "/kaggle/working/multi_train_4.json",
+		"file_name": "multi_train_4.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -817,7 +817,7 @@
 		}
 	},
 	"multi_train_5": {
-		"file_name": "/kaggle/working/multi_train_5.json",
+		"file_name": "multi_train_5.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -831,7 +831,7 @@
 		}
 	},
 	"multi_train_6": {
-		"file_name": "/kaggle/working/multi_train_6.json",
+		"file_name": "multi_train_6.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -845,7 +845,7 @@
 		}
 	},
 	"multi_train_7": {
-		"file_name": "/kaggle/working/multi_train_7.json",
+		"file_name": "multi_train_7.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -859,7 +859,7 @@
 		}
 	},
 	"multi_train_8": {
-		"file_name": "/kaggle/working/multi_train_8.json",
+		"file_name": "multi_train_8.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -873,7 +873,7 @@
 		}
 	},
 	"multi_train_9": {
-		"file_name": "/kaggle/working/multi_train_9.json",
+		"file_name": "multi_train_9.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
@@ -887,7 +887,21 @@
 		}
 	},
 	"multi_train_10": {
-		"file_name": "/kaggle/working/multi_train_10.json",
+		"file_name": "multi_train_10.json",
+		"formatting": "sharegpt",
+		"columns": {
+			"messages": "messages"
+		},
+		"tags": {
+			"role_tag": "role",
+			"content_tag": "content",
+			"user_tag": "user",
+			"assistant_tag": "assistant",
+			"system_tag": "system"
+		}
+	},
+	"multi_train_11": {
+		"file_name": "multi_train_11.json",
 		"formatting": "sharegpt",
 		"columns": {
 			"messages": "messages"
