@@ -7,7 +7,7 @@ do_train: true
 finetuning_type: full
 
 ### dataset
-dataset: qwen_train_data
+dataset: multi_train_0,multi_train_1,multi_train_2,multi_train_3,multi_train_4,multi_train_5,multi_train_6,multi_train_7,multi_train_8,multi_train_9,multi_train_10
 template: qwen
 cutoff_len: 512
 overwrite_cache: true
